@@ -7,12 +7,14 @@
     <title>김정희 :: 내 영화 보드</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Gowun+Dodum&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Gowun+Dodum&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
+
     <header class="top">
         <h1>내 영화 보드</h1>
         <nav>
@@ -30,11 +32,23 @@
     </section>
 
     <main>
-        
+
         <section id="mine">
             <h2>내 인생 영화 6편</h2>
+            <p id="count"></p>
+
+            <!-- index.html : <section class="board" id="board"> 바로 위에 -->
+            <div class="toolbar">
+                <p id="count"></p>
+                <label for="sort">정렬</label>
+                <select id="sort" onchange="applySort()">
+                    <option value="rating">평점순</option>
+                    <option value="year">최신 개봉순</option>
+                    <option value="title">제목순</option>
+                </select>
+            </div>
             <div class="board" id="board">
-             
+
             </div>
         </section>
 
