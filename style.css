@@ -249,7 +249,7 @@ footer {
   }
 
   .board {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -300,3 +300,4 @@ footer {
     grid-template-columns: 1fr 2fr; /* 왼쪽 포스터 1, 오른쪽 정보 2 */
   }
 }
+ .card.hot .badge { background: crimson; color: #fff; }
